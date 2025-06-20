@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hi{
+            padding-left: 250px;
+            display: block;
+        }
+        #hh{
+            padding-top: 70px;
+        }
+    </style>
+</head>
+<body id="background">
+    <div id="hh">
+    <img src="oh.jpg" width="100px" class="hi" onclick="change()" id="om">
+    <button onclick="color()" style="font-size: 10px; margin-left: 150px;" id="foto">Change background color</button>
+    <button onclick="textcolor()" id="fot" style="font-size: 10px;">change text colors</button>
+    <button onclick="reset()" id="fo" style="font-size: 10px;">Reset</button>
+    </div>
+
+
+    <script>
+        function color(){
+                let background = document.getElementById("background")
+                background.style.backgroundColor = "red"
+        }
+        function textcolor(){
+                let colo = document.getElementById('foto')
+                colo.style.color = "yellow"
+                colo.style.backgroundColor = "black"
+                let col = document.getElementById('fot')
+                col.style.color = "yellow"
+                col.style.backgroundColor = "black"
+                let co = document.getElementById('fo')
+                co.style.color = "yellow"
+                co.style.backgroundColor = "black"
+        }
+        function reset(){
+                let res = document.getElementById('foto')
+                res.style.color = "black"
+                res.style.backgroundColor = "#efefef"
+                res.style.borderColor = '#767676'
+                res.style.borderRadius = '2px'
+                let re = document.getElementById('fot')
+                re.style.color = "black"
+                re.style.backgroundColor = "#efefef"
+                let r = document.getElementById('fo')
+                r.style.color = "black"
+                r.style.backgroundColor = "#efefef"
+                let back = document.getElementById('background')
+                back.style.backgroundColor = "white"
+                let hehe = document.getElementById('om')
+                hehe.src = 'oh.jpg'
+        }
+        function change(){
+            let hehe = document.getElementById('om')
+            hehe.src = "photo.png"
+        }
+    </script>
+</body>
+</html>
