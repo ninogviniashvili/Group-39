@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="parent1">parent element</div>
+  <div id="parent2">
+    <p id="childToRemove">not needed</p>
+  </div>
+
+  <button id="hoverButton">hover here</button>
+
+  <div id="replaceDiv">
+    <button id="replaceButton">replace</button>
+  </div>
+
+  <script>
+    const parent1 = document.getElementById("parent1");
+    const newChild = document.createElement("span");
+    newChild.textContent = " (child element)";
+    parent1.appendChild(newChild);
+
+    const parent2 = document.getElementById("parent2");
+    const childToRemove = document.getElementById("childToRemove");
+    parent2.removeChild(childToRemove);
+
+    const hoverButton = document.getElementById("hoverButton");
+
+    hoverButton.onmouseover = function() {
+      console.log(5);
+    };
+
+    hoverButton.onmouseout = function() {
+      console.log(10);
+    };
+
+    const replaceDiv = document.getElementById("replaceDiv");
+    const buttonToReplace = document.getElementById("replaceButton");
+    const newParagraph = document.createElement("p");
+    newParagraph.textContent = "new one";
+
+    replaceDiv.replaceChild(newParagraph, buttonToReplace);
+  </script>
+</body>
+</html>

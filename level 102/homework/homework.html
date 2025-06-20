@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 1 -->
+    <!-- <button id="Button">click</button>
+    <p id="paragraph">Initial text</p>
+
+    <script>
+        const button = document.getElementById('Button');
+        const paragraph = document.getElementById('paragraph');
+
+        button.addEventListener('click', function() {
+            paragraph.textContent = 'button clicked!';
+        });
+    </script> -->
+
+<!-- 2,3 -->
+    <div id="myDiv" style="width: 200px; height: 200px; background-color: red;"></div>
+    <script>
+
+        const myDiv = document.getElementById('myDiv');
+
+        myDiv.addEventListener('pointerover', function() {
+            myDiv.style.backgroundColor = 'green';
+        });
+
+        myDiv.addEventListener('pointerout',function() {
+            myDiv.style.backgroundColor = 'white'
+        } )
+    </script> 
+
+<!-- 4 -->
+
+    <img style="width: 600px;" id="myImage" src="uhmblud.png" alt="">
+
+    <script>
+        const myImage = document.getElementById('myImage');
+
+        myImage.addEventListener('click', function() {
+            myImage.style.width = '300px';
+        });
+    </script>
+
+<!-- 5 -->
+
+5. დაამატეთ მოვლენის მსმენელი სათაურში, რომელიც pointerover-ზე კონსოლში გამოიტანს „Mouse is here!“ ტექსტს.
+    <h1 id="myHeader">Hover over me!</h1>
+    <script>
+        const myHeader = document.getElementById('myHeader');
+
+        myHeader.addEventListener('pointerover', function() {
+            console.log('Mouse is here!');
+        });
+    </script>
+</body>
+</html>
