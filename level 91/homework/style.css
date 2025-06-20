@@ -1,0 +1,45 @@
+.container{
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    margin-top: 300px;
+}
+
+#weight{
+    border-radius: 10px;
+    padding: 8px;
+    text-align: center;
+    font-size: large;
+    border:solid rgb(116, 116, 116) 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#height{
+    border-radius: 10px;
+    padding: 8px;
+    text-align: center;
+    font-size: large;
+    border:solid rgb(116, 116, 116) 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+#btn{
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 65px;
+    padding-right: 65px;
+    text-align: center;
+    font-size: large;
+    border:solid rgb(116, 116, 116) 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#btn:hover{
+    background-color: whitesmoke;
+}
+
+#bmi{
+    font-size: x-large;
+    
+}
