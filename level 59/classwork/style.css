@@ -1,0 +1,82 @@
+/* 1. შექმენით საიტი, სადაც გექნებათ:
+
+* 150x200 div, რომელიც მაუსის დაჭერის შემდეგ გადაინაცვლებს მარცხნივ, 50 px-ით.
+
+* 150x200 div, რომელიც მაუსის დაჭერის შემდეგ გადიდდება 1.5-ჯერ, ან დაპატარავდება 2-ჯერ.
+
+* 150x200 div, რომელიც მაუსის დაჭერის შემდეგ გადაინაცვლებს დიაგონალურად ქვევით.
+
+* 150x200 div, რომელიც მაუსის დაჭერის შემდეგ დატრიალდება საათის ისრის საწინააღმდეგო მიმართულებით.
+
+2. შექმენით საიტი, სადაც გექნებათ 150x200 div, რომელიც მაუსის დაჭერის შემდეგ გადაინაცლვებს 50px-ით მარჯვნივ, თან დატრიალდება 25 გრადუსით, 
+ამავდროულად გადიდდება 4-ჯერ.
+  */
+
+.div1{
+    height: 150px;
+    width: 200px;
+    background-color: blue;
+
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.div1:active{
+    transform: translate(50px);
+}
+
+.div2{
+    height: 150px;
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    left: 100px;
+    top: 300px;
+}
+
+.div2:active{
+    transform: scale(1.5);
+}
+
+.div3{
+    height: 150px;
+    width: 200px;
+    background-color: black;
+    position: absolute;
+    left: 100px;
+    top: 500px;
+}
+
+.div3:active{
+    transform: translate(50px, 50px);
+}
+
+.div4{
+    height: 150px;
+    width: 200px;
+    background-color:blueviolet;
+    position: absolute;
+    left: 100px;
+    top: 700px;
+}
+
+.div4:active{
+    transform: rotate(-50deg);
+}
+
+.div5{
+    height: 150px;
+    width: 200px;
+    background-color:blueviolet;
+    position: absolute;
+    left: 900px;
+    top: 800px;
+
+}
+
+.div5:active{
+    transform: translate(50px);
+    transform: rotate(25deg);
+    transform: scale(4);
+}

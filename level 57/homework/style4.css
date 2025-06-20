@@ -1,0 +1,11 @@
+div{
+    background-color: darkblue;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top:350px;
+    left: 850px;
+
+    background-image: url(image.jpg);
+    
+}

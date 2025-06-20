@@ -1,0 +1,35 @@
+/* 1 */
+body {
+    height: 100px;
+    background-color: #f0f0f0;
+}
+
+img {
+    position: absolute;
+    top: 200px;
+    left: 500px;
+}
+
+/* 2 */
+
+body {
+    background-color: #f0f0f0;
+}
+
+.text-section {
+    position: absolute;
+    font-size: 20px;
+    color: #333;
+}
+
+.logo {
+    position: absolute;
+    left: 750px;
+    width: 600px;
+    height: 600px;
+}
+
+p{
+    display: flex;
+    justify-content: left;
+}

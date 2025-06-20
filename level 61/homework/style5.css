@@ -1,0 +1,24 @@
+/* 5. შექმენით ანიმაცია, სადაც 200x200 div გაიზრდება ზომაში, შემდეგ კი თავის საწყის ზომაზე 2-ჯერ დაპატარავდება. --> */
+div{
+    height: 200px;
+    width: 200px;
+    margin: 100px;
+    background-color: brown;
+    
+    animation-name: change;
+    animation-duration: 3s;
+}
+
+@keyframes change{
+    0%{
+
+    }
+
+    50%{
+        transform: scale(1.5);
+    }
+
+    100%{
+        transform: scale(0.5);
+    }
+}
