@@ -1,0 +1,55 @@
+<!--სათაური (Header) – გამოიყენე HTML-ის <header> ტეგი და მასში ჩასვი გვერდის მთავარი სათაური (მაგ., "My Portfolio").
+
+    ნავიგაციის მენიუ (Navigation Bar) – შექმენი ნავიგაციის მენიუ, რომელიც მოიცავს 3 ბმულს (Home, About, Contact) და გამოიყენე CSS და გასტილეთ.
+    
+    მთავარი სექცია (Main Section) – შექმენი სექცია, რომელიც შეიცავს:
+    გამოსახულებას (Image): ჩასვი ერთ-ერთი სურათი და მისი ზომა CSS-ით დაარეგულირე ისე, რომ იყოს 300px სიგანეზე.
+    
+    ტექსტი (Paragraph): ჩასვი ტექსტი, სადაც წერია შენი მიზნები (შეგიძლია დაამატო "Lorem Ipsum").
+    ღილაკი (Button): ტექსტით „Click Me“. ღილაკზე დაჭერის შედეგად უნდა გადახვიდეთ შემდეგ გვერძე, სადაც დაამატებთ სასურველ ინფორმაციას.
+    
+    საიტის ბოლო სექცია (Footer) – დაამატე <footer>, სადაც ჩაწერილია თარიღი (მაგ., "© 2024 My Portfolio"). გამოიყენე CSS-ით ტექსტის ცენტრში განთავსება.
+    
+    სია (ul/li): გასტილე სია, შეუცვალე ტექსტს ფერი, გამოიყენე list-style-type პროფერთი, ლათინური რიცხვების მაგივრად სიას მარკერებად დაუწერე რომაული რიცხვები, გამოიყენე მნიშვნელობა inside.
+    
+    მოთხოვნები:
+    გამოიყენე CSS Selectors (class, id).
+    სათაური უნდა იყოს უფრო დიდი შრიფტის ზომით.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+        <header id="main-header">
+        <h1 class="header-title">My Portfolio</h1>
+    </header>
+
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="main">
+        <img src="images (1).jfif" alt="">
+        <p class="text">The horse is a mammal that people have valued for thousands of years. In the past people commonly used horses to get from place to place and to pull heavy loads. People still use horses in sports and recreation. The scientific name of the horse is Equus caballus.</p>
+        <button class="click-btn">Click Me</button>
+    </section>
+
+
+    <footer id="footer">
+        <p> 2024 My Portfolio</p>
+    </footer>
+
+</body>
+</html>

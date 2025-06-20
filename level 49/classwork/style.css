@@ -1,0 +1,11 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red; 
+    margin-left: 50px;
+}
+
+img{
+    border: 3px solid darkblue;
+    margin-top: 20px;
+}

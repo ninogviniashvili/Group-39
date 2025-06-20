@@ -1,0 +1,133 @@
+<!--1. შექმენი 5 ელემენტი, მიეცი მათ id-ები, შემდეგ კი გასტილე internal css-ის გამოყენებით.
+2. შექმენი 5 ელემენტი, მიეცი მათ class-ები, შემდეგ კი გასტილე internal css-ის გამოყენებით.
+3. შექმენი 4 ელემენტი, 2 <p> და 2 <h1>, მიეცი მათი ერთი კლასი, თუმცა internal css-ში გასტილე ამ კლასის მქონე მხოლოდ <p>-ები.
+4. შექმენი მშობელი ელემენტი <button>, შიგნით კი ჩასვი შვილი ელემენტი <p>, მშობელს გაუწერე სტილი და დააკვირდი რა მოუვა შვილს.
+5.  მოიძიე ინფორმაცია external css-ზე, ეცადე გამოიყენო ის შენს html ფაილში.-->
+
+<!--1)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        #country1{
+            color: beige;
+            background-color: bisque;
+        }
+
+        #country2{
+            color: salmon;
+            background-color: darkcyan;
+        }
+        
+        #country3{
+            color: aquamarine;
+            background-color: gold;
+        }
+        #country4{
+            color: green;
+            background-color: gainsboro;
+        }
+        #country5{
+            color: orange;
+            background-color: black;
+        }
+    
+
+    </style>
+    <h1 id="country1">Georgia</h1>
+    <h1 id="country2">France</h1>
+    <h1 id="counrty3">United States</h1>
+    <h1 id="country4">Spain</h1>
+    <h1 id="country5">Germany</h1>
+
+</body>
+</html>
+
+
+<!--2)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+
+        .country{
+            color: brown;
+            background-color: azure;
+            font-size: larger;
+        }
+        .COUNTRY{
+            color: black;
+            background-color: aqua;
+            font-size: large;
+        }
+
+    </style>
+
+    <h1 class="country">Georgia</h1>
+    <h1 class="country">France</h1>
+    <h1 class="country ">United States</h1>
+    <h1 class="COUNTRY">Spain</h1>
+    <h1 class="COUNTRY">Germany</h1>
+
+</body>
+</html>
+
+<!--3)-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        .sport{
+            color: aquamarine;
+            background-color: beige;
+            font-size: medium;
+        }
+    </style>
+
+    <p class="sport">valleyball</p>
+    <p class="sport">basketball</p>
+    <h1 class="sport">football</h1>
+    <h1 class="sport">tennis</h1>
+
+</body>
+</html>
+
+<!--4)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button style="color: bisque; background-color: white;">
+        <p>GOA</p>
+    </button>
+    
+</body>
+</html>

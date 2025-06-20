@@ -1,0 +1,60 @@
+/* 1 */
+.div1 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .div {
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+    border: 1px solid black;
+  }
+/* 2 */
+.divv {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.diva {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+
+/* 3 */
+
+.div9 {
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+.item {
+  border: 2px solid black;
+  padding: 10px;
+  width: 200px;
+}
+
+.wrap {
+  
+  flex-wrap: wrap;
+}
+
+.shrink {
+  flex-shrink: 1; 
+}
+
+/* 4 */
+
+.class {
+  display: flex; 
+}
+
+.p{
+  border: 2px solid black; 
+  padding: 10px;
+  width: 100px; 
+  flex-grow: 1; 
+}

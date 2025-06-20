@@ -1,0 +1,32 @@
+
+body {
+
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: darkgray;
+}
+
+
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    font-family: serif;
+
+}

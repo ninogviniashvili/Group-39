@@ -1,0 +1,135 @@
+<!--1)შექმენით 5 დივი ჩასვით თითოში რამდენიმე პარაგრაფი, ხუთივე დივს გაუწერეთ display: flex; და კომენტარებით ახსენით რას აკეთებს display: flex;
+
+2)შექმენით 5 დივი ჩასვით თითოში რამდენიმე დივი, ჩასმულ დივებს გაუწერეთ flex-direction: column; და კომენტარებით ახსენით რას აკეთებს flex-direction: column;
+
+3)შექმენით 5 დივი ჩასვით თითოში რამდენიმე დივი, ჩასმულ დივებს გაუწერეთ flex-direction: row; და კომენტარებით ახსენით რას აკეთებს flex-direction: row;
+
+4)შექმენით 5 დივი ჩასვით თითოში რამდენიმე დივი, ჩასმულ დივებს გაუწერეთ flex-wrap: wrap; და კომენტარებით ახსენით რას აკეთებს flex-wrap: wrap;
+
+5)შექმენით 5 დივი ჩასვით თითოში რამდენიმე პარაგრაფი, პარაგრაფებს გაუწერეთ flex-grow: ; და კომენტარებით ახსენით რას აკეთებს flex-grow: ;
+
+5)შექმენით 5 დივი ჩასვით თითოში რამდენიმე პარაგრაფი, პარაგრაფებს გაუწერეთ flex-shrink: ; და კომენტარებით ახსენით რას აკეთებს flex-shrink: ;-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!--1)-->
+
+    <div id="div">
+
+        <div class="diva">
+            <p>First paragraph</p>
+        </div>
+
+        <div class="diva">
+            <p>Second paragraph</p>
+        </div>
+
+        <div class="diva">
+            <p>Third paragraph</p>
+        </div>
+
+        <div class="diva">
+            <p>Fourth paragraph</p>
+        </div>
+
+        <div class="diva">
+            <p>Fifth paragraph</p>
+        </div>
+    </div>
+
+<!-- display: flex; ავტომატურად განალაგებს პარაგრაფებს ჰორიზონტალურად-->
+
+    <!--2)-->
+
+    <div id="div1">
+        <div class="class">1</div>
+        <div class="class">2</div>
+        <div class="class">3</div>
+        <div class="class">4</div>
+        <div class="class">5</div>
+    </div>
+
+<!--flex-direction: column; განალაგებს დივებს ვერტიკალურად, ისე რომ ისინი იქნებიან ერთმანეთის ზემოთ, არა გვერდით.-->
+
+
+    <!--3)-->
+
+    <div id="id">
+        <div class="cls">A</div>
+        <div class="cls">B</div>
+        <div class="cls">C</div>
+    </div>
+
+    <!--flex-direction: row; ელემენტები განლაგდება ჰორიზონალურად (ერთ რიგში), ანუ თითოეული ელემენტი (div) განლაგდება გვერდიგვერდ.-->
+
+    <!--4)-->
+
+    <div class="diva">
+        <div>A</div>
+    </div>
+
+    <div class="diva">
+        <div>B</div>
+    </div>
+
+    <div class="diva">
+        <div>C</div>
+    </div>
+
+    <div class="diva">
+        <div>D</div>
+    </div>
+
+    <div class="diva">
+        <div>E</div>
+    </div>
+
+<!--flex-wrap: wrap;  ანაცვლებს ელემენტს ახალ რიგში, თუ პირველ რიგში აღარ არის საკმარისი ადგილი.-->
+
+    <!--5)-->
+    <div id="ID">
+        <div class="CLASS">
+            <p>Paragraph 1</p>
+        </div>
+        <div class="CLASS">
+            <p>Paragraph 2</p>
+        </div>
+        <div class="CLASS">
+            <p>Paragraph 3</p>
+        </div>
+        <div class="CLASS">
+            <p>Paragraph 4</p>
+        </div>
+        <div class="CLASS">
+            <p>Paragraph 5</p>
+        </div>
+    </div>
+
+<!--flex-grow საშუალებას აძლევს შვილის ელემენტებს გაიზარდონ იმის მიხედვით, თუ რამდენი სივრცე დარჩა კონტეინერში-->
+
+    <!--6)-->
+
+    <div id="iddiv">
+        <div class="id">
+            <p>Paragraph 1</p>
+        </div>
+
+        <div class="id">
+            <p>Paragraph 2</p>
+        </div>
+
+        <div class="id">
+            <p>Paragraph 3</p>
+        </div>
+    </div>
+<!--flex-shrink განსაზღვრავს, რამდენად უნდა შემცირდეს ელემენტები კონტეინერის გადაჭარბებული სივრცის შემთხვევაში-->
+
+</body>
+</html>

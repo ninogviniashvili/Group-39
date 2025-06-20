@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+#main-header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+
+}
+
+#navbar ul {
+    background-color: #222;
+}
+
+
+#navbar ul li a {
+    color: white;
+    font-size: 18px;
+}
+
+#navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+#main {
+    text-align: center;
+}
+
+#footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    width: 100%;
+
+}
