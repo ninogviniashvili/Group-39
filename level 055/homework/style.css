@@ -1,0 +1,50 @@
+/* 1 */
+button{
+    position: fixed;
+    top: 10px;
+    left: 1800px;
+
+    font-size: larger;
+    padding: 10px 20px;
+
+}
+
+/* 2 */
+.parent-container {
+    background-color: bisque;
+    position: absolute;
+    left: 850px;
+    top: 350px;
+
+}
+
+.centered-box {
+    width: 200px;
+    height: 200px;
+    background-color: #10365e;
+}
+
+/* 4 */
+
+.div1{
+    background-color: aqua;
+    position: absolute;
+    left: 100px;
+    left: 50px;
+}
+
+.div2{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(111, 3, 3);
+}
+
+/* 5 */
+.fixed-footer {
+    position: absolute;
+    top: 850px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+}

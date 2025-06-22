@@ -1,0 +1,21 @@
+.body1 {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.fixed-image {
+    position: fixed;
+    top: 35px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+.content {
+    padding-top: 100px;
+    padding: 20px;
+}
+
+h1 {
+    margin-top: 20px;
+}

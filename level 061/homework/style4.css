@@ -1,0 +1,18 @@
+/* <!-- 4. შექმენით ტექსტი, შემდეგ კი ანიმაციის მეშვეობით შეუცვალეთ ფერი, გამოიყენეთ @keyframes. --> */
+h1{
+    color: red;
+    animation-name: text;
+    animation-duration: 2s;
+    margin: 20px;
+    font-size: 50px;
+}
+
+@keyframes text{
+    0%{
+
+    }
+
+    100%{
+        color: blue;
+    }
+}

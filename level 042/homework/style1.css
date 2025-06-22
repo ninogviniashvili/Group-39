@@ -1,0 +1,12 @@
+input[type="age"]{border: 5px solid darkred;}
+input[type="number"]{border: 5px solid darksalmon;}
+input[type="emale"]{border: 5px solid darkblue;}
+input[type="name"]{border: 5px solid lightcoral;}
+
+div{
+    height: 200px;
+    width: 200px;
+    background-color: darkred;
+
+    border-radius: 10px 40px 30px 20px;
+}

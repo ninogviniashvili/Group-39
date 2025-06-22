@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+    <button id="Button">click</button>
+  <button id="remove">remove</button>
+
+  <script>
+    const button = document.getElementById('Button');
+    const removeBtn = document.getElementById('remove');
+
+    function joao() {
+      console.log(100);
+    }
+
+    button.addEventListener('click', joao);
+
+    removeBtn.addEventListener('click', function () {
+      button.removeEventListener('click', joao);
+      console.log("deleted");
+    });
+  </script>
+</body>
+</html>

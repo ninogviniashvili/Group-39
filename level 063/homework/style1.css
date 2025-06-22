@@ -1,0 +1,47 @@
+#div1{
+    background-color: red;
+    height: 60px;
+    width: 60px;
+
+    border-radius: 50px;
+    position: absolute;
+
+    left: 100px;
+    top: 400px;
+}
+
+#div2{
+    background-color: blue;
+    height: 60px;
+    width: 60px;
+
+    border-radius: 50px;
+    position: absolute;
+    left: 1700px;
+    top: 400px;
+}
+
+#div3{
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+
+    position: absolute;
+    left: 150px;
+    top: 415px;
+    animation: ball 3s infinite ease;
+}
+
+@keyframes ball{
+        0%{
+    
+         }
+        50%{
+            transform: translate(1550px);
+        }
+        100%{
+            transform: translate(1550px);
+            background-color: blue;
+        }
+}

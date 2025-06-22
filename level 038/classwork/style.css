@@ -1,0 +1,12 @@
+td{
+
+    border: solid;
+    border-collapse: collapse;
+    color: brown;
+}
+
+th{
+    border-collapse: collapse;
+    border: solid;
+    color: blue;
+}

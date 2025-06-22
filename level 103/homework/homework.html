@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1.  -->
+    <p id="counter">0</p>
+    <button id="incrementButton">Increment</button>
+    <script>
+        const counter = document.getElementById('counter');
+        const incrementButton = document.getElementById('incrementButton');
+
+        incrementButton.addEventListener('click', function() {
+            let currentValue = parseInt(counter.textContent);
+            counter.textContent = currentValue + 1;
+        });
+    </script>
+<br><br><br>
+<!-- 2 -->
+
+    <img id="myImage" src="image.png" alt="" style="width: 150px; height: 150px;">
+    <script>
+        const myImage = document.getElementById('myImage');
+
+        myImage.addEventListener('mouseover', function() {
+            myImage.style.width = '200px';
+            myImage.style.height = '200px';
+        });
+
+        myImage.addEventListener('mouseout', function() {
+            myImage.style.width = '150px';
+            myImage.style.height = '150px';
+        });
+    </script>
+
+<br><br><br>
+
+<!-- 3 -->
+
+    <p id="hoverParagraph">Hover over me!</p>
+    <div id="newElement" style="display: none;">New Element</div>
+    <script>
+        const hoverParagraph = document.getElementById('hoverParagraph');
+        const newElement = document.getElementById('newElement');
+        hoverParagraph.addEventListener('mouseover', function() {
+            newElement.style.display = 'block';
+        });
+        hoverParagraph.addEventListener('mouseout', function() {
+            newElement.style.display = 'none';
+        });
+    </script>
+
+<br><br><br>
+<!-- 4 -->
+    <div id="colorBox" style="width: 200px; height: 200px; background-color: white;"></div>
+    <script>
+        const colorBox = document.getElementById('colorBox');
+
+        colorBox.addEventListener('mousedown', function() {
+            colorBox.style.backgroundColor = 'blue';
+        });
+
+        colorBox.addEventListener('mouseup', function() {
+            colorBox.style.backgroundColor = 'white';
+        });
+    </script>
+
+<br><br><br>
+<!-- 5. -->
+
+    <p id="toggleParagraph">Click me</p>
+    <div id="hiddenElement" style="display: none;">hidden element.</div>
+    <script>
+        const toggleParagraph = document.getElementById('toggleParagraph');
+        const hiddenElement = document.getElementById('hiddenElement');
+
+        toggleParagraph.addEventListener('click', function() {
+            if (hiddenElement.style.display === 'none') {
+                hiddenElement.style.display = 'block';
+            } else {
+                hiddenElement.style.display = 'none';
+            }
+        });
+    </script>
+
+<br><br><br>
+
+    <!-- 1.  -->
+    <button id="addElementButton">Add Element</button>
+    <div id="elementContainer"></div>
+    <script>
+        const addElementButton = document.getElementById('addElementButton');
+        const elementContainer = document.getElementById('elementContainer');
+        addElementButton.addEventListener('click', function() {
+            const newElement = document.createElement('div');
+            newElement.textContent = 'New Element';
+            elementContainer.appendChild(newElement);
+        });
+    </script> 
+
+
+<br><br><br>
+    <!-- 2 -->
+    <ul id="itemList">
+        <li>Item 1 <button class="deleteButton">Delete</button></li>
+        <li>Item 2 <button class="deleteButton">Delete</button></li>
+        <li>Item 3 <button class="deleteButton">Delete</button></li>
+        <li>Item 4 <button class="deleteButton">Delete</button></li>
+        <li>Item 5 <button class="deleteButton">Delete</button></li>    
+            </ul>
+    </script> 
+    
+    <br><br><br>
+    <!-- 3 -->
+    <p id="hoverParagraph">Hover over me!</p>
+    <p id="replacementParagraph" style="display: none;">replacement paragraph.</p>
+    <script>
+        const hover = document.getElementById('hoverParagraph');
+        const replacementParagraph = document.getElementById('replacementParagraph');
+
+        hover.addEventListener('mouseover', function() {
+            hover.style.display = 'none';
+            replacementParagraph.style.display = 'block';
+        });
+
+        replacementParagraph.addEventListener('mouseout', function() {
+            replacementParagraph.style.display = 'none';
+            hover.style.display = 'block';
+        });
+        </script> 
+
+</body>
+</html>

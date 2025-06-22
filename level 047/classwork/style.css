@@ -1,0 +1,31 @@
+div{
+background-color: lightblue;
+display: flex;
+justify-content: center;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;  
+    display: flex;
+    align-items: center;
+}
+
+.big-div {
+    width: 80px; 
+    height: 80px; 
+    background-color: lightblue;
+    display: flex;
+    flex-wrap: wrap; 
+    
+    justify-content: space-between; /* ჰორიზონტალურად (X ღერძი) ეს ატრიბუტი განლაგებს დივებს ისე, რომ არსებობდეს ერთნაირი სივრცე მათ შორის */
+    justify-content: space-around; /* ვერტიკალურად (Y ღერძი) ეს ატრიბუტი განლაგებს დივებს ისე, რომ სივრცე იყოს თანაბარი */
+    justify-content: space-evenly; /* ეს ატრიბუტი განლაგებს პატარა დივებს Y ღერძზე თანაბარი სივრცით */
+}
+
+.small-div {
+    width: 30px; 
+    height: 30px; 
+    background-color: coral; 
+}

@@ -1,0 +1,25 @@
+<!-- 1. შექმენით ფორმა ერთი ტექსტის ინფუთით და ერთი ღილაკით, 
+ შემდეგ ფუნქციის მეშვეობით ღილაკზე დაჭერისას კონსოლში გამოიტანოს ინფუთში შეტანილი ინფორმაცია. -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+     <input type="text" id="aaa">
+     <button onclick="getvalue()">Enter</button>
+ 
+     <script>
+         function getvalue(){
+             let inputvalue = document.getElementById('aaa').value
+             console.log(inputvalue)
+         }
+ 
+         
+        
+     </script>
+ </body>
+ </html>

@@ -1,0 +1,21 @@
+/* <!-- 2. შექმენით მრგვალი, ლურჯი დივი, ანიმაციის მეშვეობით კი მისი მოძრაობა ბურთის ხტუნავს მიამსგავსეთ, გამოიყენეთ @keyframe-ები. --> */
+div{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+
+    border-radius: 100px;
+    animation-name: bounce;
+    animation-duration: 3s;
+
+}
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translate(0);
+    }
+    50% {
+      transform: translate(200px, 200px);
+
+    }
+  }

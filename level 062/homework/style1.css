@@ -1,0 +1,35 @@
+body {
+    margin: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #f0f0f0;
+  }
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color:rgb(1, 1, 93);
+    border-radius: 50%;
+    position: absolute;
+    animation-name: bounce;
+    animation-duration: 3s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translate(0);
+      height: 50px;
+      width: 50px;
+    }
+    50% {
+      transform: translate(300px, 300px);
+      height: 40px;
+      width: 60px;
+    }
+
+    100%{
+        transform: translate(600px);
+    }
+}

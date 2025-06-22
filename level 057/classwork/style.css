@@ -1,0 +1,32 @@
+
+body {
+
+    margin-top: 200px;
+    background-color: #f0f0f0;
+}
+
+.div {
+    width: 500px;
+    height: 500px;
+    background-color: #31a3ef;
+    border: 5px solid #2980b9;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0);
+    transition:0.3s ;
+    background-image: url(image.jpg);
+    /* padding: 100px; */
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 680px;
+}
+
+.div:hover {
+    background-color: #1e6da1;
+    box-shadow: 0 8px 30px rgba(21, 21, 21, 0.4);
+    transform: scale(1.1);
+}
+
+
+/* cover: შევსებულია ელემენტში, მაგრამ შეიძლება გაჭიმული იყოს პროპორციის შენარჩუნების გარეშე.
+contain:მოათავსებს მთლიანად ელემენტში, რათა არ იყოს გაჭიმული, მაგრამ შეიძლება დარჩეს თავისუფალი სივრცე.
+repeat: ავტომატურად გაიმეორება ჰორიზონტალურად და ვერტიკალურად img თუ დარჩენილია სივრცე.
+no-repeat: img მხოლოდ ერთხელ გამოჩნდება.*/

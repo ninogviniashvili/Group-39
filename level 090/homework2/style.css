@@ -1,0 +1,71 @@
+body{
+    background-image: url(image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div{
+    display: flex;
+}
+.h1{
+    position: absolute;
+    left: 60px;
+    margin: 0px;
+    top: 20px;
+    font-size: 50px;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+}
+.btn{
+    position: absolute;
+    left: 1240px;
+    font-size: 27px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(167, 162, 162, 0.573);
+    color: white;
+    border: transparent;
+}
+
+.btn1{
+    position: absolute;
+    left: 1490px;
+    font-size: 27px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(167, 162, 162, 0.573);
+    color: white;
+    border: none;
+
+}
+.btn2{
+    position: absolute;
+    left: 1695px;
+    font-size: 27px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(128, 119, 119);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.p1{
+    color: white;
+    position: absolute;
+    top: 470px;
+    left: 50px;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.p2{
+    color: white;
+    position: absolute;
+    top: 470px;
+    left: 469px;
+    font-size: 50px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}

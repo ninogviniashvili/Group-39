@@ -1,0 +1,81 @@
+#Easy:
+#1.  ჩამოთვალე და კომენტარების მეშვეობით ახსენი პითონში არსებული 3 ინფორმაციის ტიპი (int, float, str).
+#2. შექმენი 3 ცვლადი, სამივეში შეინახე განსხვავებული ინფორმაციის ტიპები, საბოლოოდ type() ფუნქციის გამოყენებით დაპრინტე მათი ტიპები.
+#3. მომხმარებელს Input()-ით შემოატანინე 2 რიცხვი და ამ ორ რიცხვზე გააკეთე გაყოფა, გამრავლება, მიმატება, გამოკლება (By Ilia Dzindzibadze).
+
+
+1.
+
+int #:
+#intejeri aris mteli ricxvi, 
+
+float #:
+#es aris igive atwiladi 
+
+str #:
+ #stringi aris is brwyalebshi moqceuli sityva
+
+#2.
+
+name = "nino"
+print(type(name))
+
+age = 12
+print(type(age))
+
+num = 20.0
+print(type(num))
+
+3.
+
+num1 = input("enter any number :")
+num2 = input("enter any number :")
+
+print(num1 + num2)
+print(num1 - num2)
+print(num1 // num2)
+print(num1 * num2)
+
+
+
+#Medium:
+#3. შექმენი ცვლადი, რომელშიც თავიდან შეინახავ "5"-ს, შემდეგ ეს ცვლადი გადააქციე integer-ად და დაპრინტე
+
+age = "5"
+print(int(age))
+
+
+#4. შექმენი ცვლადი, რომელშიც თავიდან შეინახავ 6-ს, შემდეგ ეს ცვლადი გადააქციე float-ად და დაპრინტე (By Ilia Dzindzibadze).
+
+num = 6
+print(float(num))
+
+
+#5. დაწერე კოდი, სადაც გამოიყენებ ორივე ტიპის გაყოფას (/ და //), დააკვირდი რა განსხვავებაა მათ შორის და დაწერე კომენტარში.
+
+num1 = 30
+num2 = 5
+
+print(num1 / num2)
+#esti daxrili xazis anu gayofis dros pasuxi gamove yoveltvis atwiladi
+
+print(num1 // num2)
+#magram eseti gayofa ubralod gveubneba ramdenjer motavsdeba, anu vigebs mtlian ricxvs 
+#da ara atwilads
+
+
+
+#Hard:
+#6. მომხმარებელს input()-ით შემოატანინე ასაკი და ბოლოს დაუპრინტე, თუ რამდენი წლის იქნება 5 წლის შემდეგ (By Ilia Dzindzibadze).
+age = input("enter your age :")
+
+print(int(age) + 5)
+
+
+#7. შექმენი 2 ცვლადი, პირველში მომხარებელს input()-ით შემოატანინე მისი სახელი, მეორეში გვარი, საბოლოოდ დაუპრინტე მისალმების მესიჯი, მაგალითად: 'გამარჯობა' + (სახელი) + (გვარი).
+
+name =input("enter your name :")
+
+surname = input("enter your surname :")
+print("hello" + "  " + "name" + "  " + "surname")
+

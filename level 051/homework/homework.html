@@ -1,0 +1,166 @@
+<!--1)  4 სხვადასხვა ფერის, ერთნაირი სიმაღლისა და სიგანის კუბიკები:
+1.1 შექმენით div, სადაც იქნება 4 სხვადასხვა ფერის, ერთნაირი სიმაღლის და სიგანის კუბიკი.
+1.2 გამოიყენეთ flex კონტეინერი და გაუწერეთ flex-direction: row-reverse.
+
+2 )  5 div ვერტიკალურად:
+2.1 შექმენით 5 div.
+2.2 კონტეინერს გაუწერეთ display: flex და დააყენეთ ელემენტები ვერტიკალურად.
+
+3)  5 პარაგრაფი და wrap:
+3.1 შექმენით 5 პარაგრაფი.
+3.2 კონტეინერს გაუწერეთ flex-wrap: wrap.
+
+4) 5 პარაგრაფი და shrink:
+4.1 შექმენით 5 პარაგრაფი.
+4.2 თითოეულ პარაგრაფს გაუწერეთ flex-shrink.
+
+5) 5 პარაგრაფი და flex-grow:
+5.1 შექმენით 5 პარაგრაფი.
+5.2 თითოეულს გაუწერეთ flex-grow.
+
+6) ბლოკ ელემენტების ინლაინში და ინლაინ ელემენტების ბლოკში გადაყვანა:
+6.1 აირჩიეთ 5 ბლოკ ლეველ ელემენტი და გადააკეთეთ ინლაინ ელემენტად.
+6.2 აირჩიეთ 5 ინლაინ ელემენტი და გადააკეთეთ ბლოკ ლეველ ელემენტად.1)  4 სხვადასხვა ფერის, ერთნაირი სიმაღლისა და სიგანის კუბიკები:
+1.1 შექმენით div, სადაც იქნება 4 სხვადასხვა ფერის, ერთნაირი სიმაღლის და სიგანის კუბიკი.
+1.2 გამოიყენეთ flex კონტეინერი და გაუწერეთ flex-direction: row-reverse.
+
+2 )  5 div ვერტიკალურად:
+2.1 შექმენით 5 div.
+2.2 კონტეინერს გაუწერეთ display: flex და დააყენეთ ელემენტები ვერტიკალურად.
+
+3)  5 პარაგრაფი და wrap:
+3.1 შექმენით 5 პარაგრაფი.
+3.2 კონტეინერს გაუწერეთ flex-wrap: wrap.
+
+4) 5 პარაგრაფი და shrink:
+4.1 შექმენით 5 პარაგრაფი.
+4.2 თითოეულ პარაგრაფს გაუწერეთ flex-shrink.
+
+5) 5 პარაგრაფი და flex-grow:
+5.1 შექმენით 5 პარაგრაფი.
+5.2 თითოეულს გაუწერეთ flex-grow.
+
+6) ბლოკ ელემენტების ინლაინში და ინლაინ ელემენტების ბლოკში გადაყვანა:
+6.1 აირჩიეთ 5 ბლოკ ლეველ ელემენტი და გადააკეთეთ ინლაინ ელემენტად.
+6.2 აირჩიეთ 5 ინლაინ ელემენტი და გადააკეთეთ ბლოკ ლეველ ელემენტად.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!--1-->
+    <div class="container">
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="green"></div>
+        <div class="yellow"></div>
+    </div>
+<!--2-->
+    <div class="container1">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+<!--3-->
+    <div class="container2">
+        <p class="p">1</p>
+        <p class="p">2</p>
+        <p class="p">3</p>
+        <p class="p">4</p>
+        <p class="p">5</p>
+    </div>
+    <!--4-->
+    <div class="container3">
+        <p class="p1"> 1</p>
+        <p class="p1"> 2</p>
+        <p class="p1"> 3</p>
+        <p class="p1"> 4</p>
+        <p class="p1"> 5</p>
+    </div>
+<!--5-->
+    <div class="container4">
+        <p class="p2"> 1</p>
+        <p class="p2"> 2</p>
+        <p class="p2"> 3</p>
+        <p class="p2"> 4</p>
+        <p class="p2"> 5</p>
+    </div>
+<!--6-->
+    <div class="div">1</div>
+    <div class="div">2</div>
+    <div class="div">3</div>
+    <div class="div">4</div>
+    <div class="div">5</div>
+
+    <a class="a">1</a>
+    <a class="a">2</a>
+    <a class="a">3</a>
+    <a class="a">4</a>
+    <a class="a">5</a>
+
+    <!--1-->
+
+    <div class="bigdiv">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+    </div>
+<!--2-->
+    <div class="container5">
+        <div class="item1"></div>
+        <div class="item1"></div>
+        <div class="item1"></div>
+        <div class="item1"></div>
+        <div class="item1"></div>
+    </div>
+
+    <!--3-->
+    <div class="container6">
+        <p class="item1"></p>
+        <p class="item1"></p>
+        <p class="item1"></p>
+        <p class="item1"></p>
+        <p class="item1"></p>
+    </div>
+<!--4)-->
+    <div class="container7">
+        <p class="item2"></p>
+        <p class="item2"></p>
+        <p class="item2"></p>
+        <p class="item2"></p>
+        <p class="item2"></p>
+    </div>
+<!--5)-->
+    <div class="container8">
+        <p class="item3"></p>
+        <p class="item3"></p>
+        <p class="item3"></p>
+        <p class="item3"></p>
+        <p class="item3"></p>
+    </div>
+<!--6)-->
+
+    <div class="diva">1</div>
+    <div class="diva">2</div>
+    <div class="diva">3</div>
+    <div class="diva">4</div>
+    <div class="diva">5</div>
+
+<!--6)-->
+    <a class="a">1</a>
+    <a class="a">2</a>
+    <a class="a">3</a>
+    <a class="a">4</a>
+    <a class="a">5</a>
+
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+.content {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.image-container img {
+    width: 550px;
+    height: 500px;
+    height: auto;
+    display: block;
+    margin: 0;
+    position: absolute;
+    border: 10px rgb(189, 188, 188) solid;
+
+}
+
+nav{
+display: flex;
+justify-content: space-around;
+font-family:'Times New Roman', Times, serif;
+}
+
+div{
+font-size: 10px;
+display: flex;
+
+}
+
+#div2, #div3{
+gap: 35px;
+}
+p{
+    font-weight: bold;
+    font-size:12px;
+    font-family: Arial, Helvetica, sans-serif;
+}

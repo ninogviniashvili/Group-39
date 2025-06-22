@@ -1,0 +1,34 @@
+<!-- შექმენით საიტი, სადაც გექნებათ ორი ცალი სხვადასხვა ფოტო, საიტზე ასევე უნდა გქონდეთ შემდეგი ღილაკები:
+
+1. ღილაკი, რომელზე დაჭერის შემდეგაც საიტზე მომხმარებელს გამოუტანთ გამაფრთხილებელ მესიჯს.
+2. ღილაკი, რომელზე დაჭერის შემდეგაც შეიცვლება პირველი ფოტოს ზომა.
+3. ღილაკი, რომელზე დაჭერის შემდეგაც შეიცვლება მეორე ფოტოს ზომა.
+4. ღილაკი, რომელზე დაჭერის შემდეგაც შეიცვლება პირველი ფოტოს მისამართი.
+5. ღილაკი, რომელზე დაჭერის შემდეგაც შეიცვლება მეორე ფოტოს მისამართი.
+
+bonus: ღილაკი, რომელზე დაჭერის შემდეგაც რომელიმე სხვა ღილაკს შეუცვლით ფონს. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img id="img1" src="3788319-77056308-2560-1440.jpg" height="300px" alt="">
+    <img id="img2" src="3e8aeeea626ce098c6de498aec2cd93eY29udGVudHNlYXJjaGFwaSwxNzI5OTU3MzA1-2.77736637.avif"  height="300px" alt="">
+    <br><br>
+
+    <button id="button1" onclick="alert('you just clicked the button!')">click</button>
+    <button onclick="img1.style.width = '200px' ">click1</button>
+    <button onclick="img2.style.width ='200px' ">click2</button>
+    <button onclick="img2.src ='joao.webp' ">click3</button>
+    <button onclick="button1.style.backgroundColor = 'darkred'" >click4</button>
+    
+
+
+</body>
+</html>

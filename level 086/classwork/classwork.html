@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="divv">
+    <div style="display: block;">
+    <h1>nino gviniashvili</h1>
+    <p id="value">0</p>
+
+</div>
+    <div class="button-container">
+        <button class="btn decrease" onclick="counter1()">10</button>
+        <button class="btn increase" onclick="counter3()">20</button>
+      </div>
+    </div>
+
+
+      <script>
+        let value = 0
+function counter1(){
+    value = 10 
+    document.getElementById("value").textContent = value
+}
+function counter3(){
+    value =20
+    document.getElementById("value").textContent = value
+}
+      </script>
+</body>
+</html>

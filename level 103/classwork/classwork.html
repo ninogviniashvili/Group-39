@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- 1 -->
+    <img id="myImage" src="Screenshot 2025-06-06 232235.png" alt="Image" style="width: 600px;">
+    <button id="changeImageButton">Change Image</button>
+    <script>
+        const myImage = document.getElementById('myImage');
+        const changeImageButton = document.getElementById('changeImageButton');
+
+        changeImageButton.addEventListener('pointerdown', function() {
+            myImage.src = 'darkred.png';
+        });
+    </script>
+
+    <!-- 2 -->
+
+    <p id="warningText">do not remove mouse from a button once you click it!</p>
+    <button id="warningButton">Click and Hold</button>
+    <script>
+        const warningButton = document.getElementById('warningButton');
+
+        warningButton.addEventListener('pointerup', function() {
+            console.log('you lost!');
+        });
+        warningButton.addEventListener('pointerleave', function() {
+            console.log('you lost!');
+        });
+    </script>
+    
+    <!-- 3 -->
+    <script>
+        const hoverText = document.getElementById('hoverText');
+
+        hoverText.addEventListener('pointerover', function() {
+            hoverText.style.color = 'red';
+            hoverText.textContent = 'why did you hover over me';
+        });
+    </script>
+</body>
+</html>

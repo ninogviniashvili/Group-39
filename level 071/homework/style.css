@@ -1,0 +1,19 @@
+*{
+    background-color: rgb(90, 3, 3);
+}
+
+img{
+    margin: 20px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+}
+
+button{
+    font-size: large;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: azure;
+}

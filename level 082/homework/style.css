@@ -1,0 +1,128 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+
+.c {
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+}
+
+.sidebar {
+    background-color: white;
+    padding: 32px;
+    flex: 1;
+}
+
+
+.logo img {
+    margin-bottom: 32px;
+    width: 100px;
+    height: 100px;
+}
+
+
+.nav a {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.sidebartext {
+    color: #adadad;
+    font-size: 14px;
+    margin-top: 500px;
+}
+
+
+.mc {
+    flex: 3;
+    padding: 32px;
+}
+
+.cg {
+    display: grid;
+  
+    gap: 32px;
+}
+
+
+.tc{
+    padding: 48px;
+    background-color: rgb(245, 244, 244);
+    border-radius: 32px;
+}
+
+.ic img {
+    width: 560px; 
+    height: 608px; 
+   border-radius: 50px;
+}
+
+
+
+.tc h1 {
+    font-size: 64px; 
+    font-weight: 600;
+    margin-bottom: 64px;
+    line-height: 1.1; 
+}
+.tc p {
+    margin-bottom: 32px;
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.subscribe input {
+    flex-grow: 1;
+    padding: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 9999px 0 0 9999px;
+}
+.subscribe button {
+    background-color: black;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 0 9999px 9999px 0;
+    border: none;
+}
+.ic img {
+    border-radius: 8px;
+}
+.ac {
+    padding: 20px;
+    padding-bottom:100px; 
+    box-shadow: rgba(100, 99, 99, 0.35) 0px 5px 15px; 
+    border-radius: 10px; 
+}
+.ac h2 {
+    font-size: 32px;
+    
+}
+@media (min-width: 1024px) {
+    .c {
+        flex-direction: row;
+    }
+    .sidebar {
+        width: 25%;
+    }
+    .mc {
+        width: 75%;
+    }
+    .cg {
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px;
+    background-color: #d6e2f0;
+    font-family: Arial, sans-serif;
+}
+
+.divv {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.diva {
+    background-color: #3f83e8;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ img {
+    padding: 40px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 18px;
+    color: #143876;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 15px;
+    color: #7b879d;
+}

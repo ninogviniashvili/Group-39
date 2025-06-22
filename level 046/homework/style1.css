@@ -1,0 +1,28 @@
+#div{
+    display: flex;
+}
+
+#div1{
+    display: flex;
+    flex-direction: column;
+}
+
+#id{
+    display: flex;
+    flex-direction: row;
+}
+
+.diva{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.CLASS{
+    display: flex;
+    flex-grow: 0;
+}
+
+.id{
+    flex-shrink: 1;
+    
+}

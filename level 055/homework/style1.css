@@ -1,0 +1,19 @@
+
+
+.content {
+    font-size: 20px;
+}
+
+.parent-container {
+    background-color: bisque;
+    position: absolute;
+    left: 850px;
+    top: 350px;
+
+}
+
+.centered-box {
+    width: 200px;
+    height: 200px;
+    background-color: #545a60;
+}
