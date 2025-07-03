@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="dish1"><br><br>
+  <input type="text" id="dish2"><br><br>
+  <input type="text" id="dish3"><br><br>
+  <input type="text" id="dish4"><br><br>
+  <button onclick="order()">conf</button>
+
+  <script>
+    function order() {
+      const sajmeli = []
+      for (let i = 0; i <= 4; i += 1) {
+        const input = document.getElementById('dish' + i).value
+      }
+      console.log("your fav", order)
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    #ball {
+      width: 50px;
+      height: 50px;
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div id="ball"></div><br>
+  <button onclick="(move)">move</button>
+  <script>
+    let start = 0
+    function move() {
+      starterpint + 50
+      document.getElementById('ball').style.top = start + 'px'
+    }
+  </script>
+</body>
+</html>
