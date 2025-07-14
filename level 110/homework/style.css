@@ -1,0 +1,9 @@
+div{
+    margin: 0;
+    padding: 0;
+    height: 180vh;
+    background-image: url('back.png');
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
