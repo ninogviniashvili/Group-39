@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="lightModeBtn">light/button>
+    <button id="darkModeBtn">dark</button>
+
+    
+  <script>
+    const lightBtn = document.getElementById('lightModeBtn');
+    const darkBtn = document.getElementById('darkModeBtn');
+
+    lightBtn.addEventListener('click', () => {
+      document.documentElement.style.setProperty('--background-color', '#ffffff');
+      document.documentElement.style.setProperty('--text-color', '#000000');
+    });
+
+    darkBtn.addEventListener('click', () => {
+      document.documentElement.style.setProperty('--background-color', '#000000');
+      document.documentElement.style.setProperty('--text-color', '#ffffff');
+    });
+  </script>
+
+  <style>
+    :root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 50px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+}
+
+  </style>
+</body>
+</html>

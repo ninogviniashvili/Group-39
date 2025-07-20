@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e6efff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-header img {
+  width: 100%;
+  display: block;
+}
+
+.card-body {
+  padding: 30px 25px;
+  text-align: center;
+}
+
+.card-body h2 {
+  margin-bottom: 15px;
+  color: #1f2d5c;
+}
+
+.description {
+  color: #6b7a99;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.plan-box {
+  background-color: #f5f7ff;
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.plan-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.price {
+  font-size: 14px;
+  color: #6b7a99;
+}
+
+.change-link {
+  color: #382ae1;
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+.payment-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #382ae1;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 6px 15px rgba(56, 42, 225, 0.2);
+  margin-bottom: 15px;
+}
+.payment-btn:hover {
+  background-color: #2c1f9b;
+}
+
+.cancel-btn {
+  background: none;
+  border: none;
+  color: #6b7a99;
+  font-weight: bold;
+  font-size: 13px;
+}
+.cancel-btn:hover {
+  color: #382ae1;
+}
