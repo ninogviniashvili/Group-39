@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .choices {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .choice {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 5px;
+        cursor: pointer;
+        width: 100px;
+        background-color: #f6f4f4;
+    }
+    .choice:hover {
+        border: 2px solid black;
+    }
+    .result {
+        margin-top: 20px;
+        font-weight: bold;
+        background: #222;
+        color: white;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+    }
+</style>
+</head>
+<body>
+
+<h1>Rock Paper Scissors</h1>
+<p>Your score: <span id="userScore">0</span></p>
+<p>Computer score: <span id="compScore">0</span></p>
+<div id="result" class="result">Make your move!</div>
+<p id="userChoice"></p>
+
+<div class="choices">
+    <div class="choice" data-choice="rock">✊<br>Rock</div>
+    <div class="choice" data-choice="paper">✋<br>Paper</div>
+    <div class="choice" data-choice="scissors">✌️<br>Scissors</div>
+</div>
+
+<script>
+let userScore = 0;
+let compScore = 0;
+
+const userScoreSpan = document.getElementById('userScore');
+const compScoreSpan = document.getElementById('compScore');
+const resultDiv = document.getElementById('result');
+const userChoiceP = document.getElementById('userChoice');
+
+const choices = ['rock','paper','scissors'];
+
+function computerChoice(){
+    return choices[Math.floor(Math.random() * 3)];
+}
+
+function play(userSelection){
+    const compSelection = computerChoice();
+    userChoiceP.textContent = `You chose: ${userSelection} | Computer chose: ${compSelection}`;
+
+    if(userSelection === compSelection){
+        resultDiv.textContent = "It's a tie!";
+    } else if (
+        (userSelection === 'rock' && compSelection === 'scissors') ||
+        (userSelection === 'paper' && compSelection === 'rock') ||
+        (userSelection === 'scissors' && compSelection === 'paper')
+    ){
+        resultDiv.textContent = "You won!";
+        userScore++;
+    } else {
+        resultDiv.textContent = "Computer won!";
+        compScore++;
+    }
+
+    userScoreSpan.textContent = userScore;
+    compScoreSpan.textContent = compScore;
+}
+
+document.querySelectorAll('.choice').forEach(el => {
+    el.addEventListener('click', () => play(el.getAttribute('data-choice')));
+});
+</script>
+
+</body>
+</html>

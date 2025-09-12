@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #preview {
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<select id="colorSelect">
+    <option value="">choose</option>
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+</select>
+<button id="clearBtn">Clear Preference</button>
+
+<div id="preview"></div>
+
+<script>
+const select = document.getElementById('colorSelect');
+const preview = document.getElementById('preview');
+const clearBtn = document.getElementById('clearBtn');
+
+let savedColor = localStorage.getItem('color');
+if(savedColor){
+    select.value = savedColor;
+    preview.style.backgroundColor = savedColor;
+}
+
+select.onchange = () => {
+    const color = select.value;
+    preview.style.backgroundColor = color || 'lightgray';
+    if(color) localStorage.setItem('color', color);
+};
+
+clearBtn.onclick = () => {
+    localStorage.removeItem('color');
+    select.value = '';
+    preview.style.backgroundColor = 'lightgray';
+};
+</script>
+</head>
+<body>

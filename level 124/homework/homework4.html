@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #colorBox {
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="colorBox"></div>
+
+<button id="redBtn">Red</button>
+<button id="greenBtn">Green</button>
+<button id="blueBtn">Blue</button>
+
+<script>
+    const colorBox = document.getElementById('colorBox');
+    const redBtn = document.getElementById('redBtn');
+    const greenBtn = document.getElementById('greenBtn');
+    const blueBtn = document.getElementById('blueBtn');
+
+    redBtn.addEventListener('click', function() {
+        colorBox.style.backgroundColor = 'red';
+        console.log("costumer chose : Red");
+    });
+
+    greenBtn.addEventListener('click', function() {
+        colorBox.style.backgroundColor = 'green';
+        console.log("costumer chose: Green");
+    });
+
+    blueBtn.addEventListener('click', function() {
+        colorBox.style.backgroundColor = 'blue';
+        console.log("costumer chose: Blue");
+    });
+</script>
+</head>
+<body>
+    
+</body>
+</html>

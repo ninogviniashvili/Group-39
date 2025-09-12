@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>number of visits: <span id="counter">0</span></h2>
+<button id="resetBtn">Reset Visits</button>
+
+<script>
+const counterSpan = document.getElementById('counter');
+const resetBtn = document.getElementById('resetBtn');
+
+let visits = parseInt(localStorage.getItem('visitCount')) || 0;
+visits++;
+localStorage.setItem('visitCount', visits);
+counterSpan.textContent = visits;
+
+resetBtn.onclick = () => {
+    visits = 0;
+    localStorage.setItem('visitCount', visits);
+    counterSpan.textContent = visits;
+};
+</script>
+</body>
+</html>

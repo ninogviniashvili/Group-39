@@ -1,0 +1,29 @@
+<!-- 3) შექმენით კლასი Car, რომელსაც ექნება brand, model და year. დაამატეთ მეთოდი getInfo(), რომელიც დაბეჭდავს "ბრენდი: X, მოდელი: Y, წელი: Z" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+class Car {
+    constructor(brand, model, year) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
+    }
+
+    getInfo() {
+        console.log(`brand: ${this.brand}, model: ${this.model}, year: ${this.year}`);
+    }
+}
+const myCar = new Car('Toyota', 'Corolla', 2020);
+myCar.getInfo(); // brand: Toyota, model: Corolla, year:
+2020
+</script>
+
+</body>
+</html>

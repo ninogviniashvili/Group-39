@@ -1,0 +1,54 @@
+<!-- 1
+
+// Promise = სამომავლო შედეგი (success ან failure) ასინქრონული ოპერაციისთვის
+// Async/await = Promise-ს გამარტივებული გამოყენება, როგორც სინქრონული კოდი
+// JavaScript არის single-threaded = ერთ დროზე მხოლოდ ერთი კოდი იყრის ბმულს, მაგრამ async ოპერაციები Event Loop-ის მეშვეობით ცალკე ემუშავება
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <style>
+        body.light {
+            background-color: white;
+            color: black;
+        }
+        body.dark {
+            background-color: black;
+            color: white;
+        }
+        button {
+            margin: 20px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+
+<button id="toggleBtn">Toggle Theme</button>
+
+<script>
+const body = document.body;
+const btn = document.getElementById('toggleBtn');
+
+let theme = localStorage.getItem('theme') || 'light';
+body.className = theme;
+
+btn.onclick = () => {
+    if(body.className === 'light') {
+        body.className = 'dark';
+        localStorage.setItem('theme', 'dark');
+    } else {
+        body.className = 'light';
+        localStorage.setItem('theme', 'light');
+    }
+};
+</script>
+
+</body>
+</html>
