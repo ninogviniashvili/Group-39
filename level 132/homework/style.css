@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+}
+
+.logo .chevron {
+  font-size: 24px;
+  color: #a100ff;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a,
+.dropbtn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.nav-links a:hover,
+.dropbtn:hover {
+  color: #a100ff;
+}
+
+.right-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  max-width: 1200px;
+  margin: 64px auto;
+  padding: 0 24px;
+  text-align: left;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.reinvented {
+  display: inline-block;
+}
+
+.purple {
+  color: #a100ff;
+}
+
+.hero-text {
+  max-width: 600px;
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 24px;
+}
+
+.hero-btn {
+  display: inline-block;
+  background: #a100ff;
+  color: #fff;
+  padding: 12px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #7a00cc;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 48px auto;
+  padding: 0 24px;
+  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+
+.card {
+  background: #111;
+  padding: 24px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  flex: 1 1 250px;
+}
+
+.card:hover {
+  transform: translate(-5px);
+}
+
+.card-type {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ccc;
+  margin-bottom: 8px;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
