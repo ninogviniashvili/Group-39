@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Document</title>
+</head>
+<body>
+  <div id="prodB"></div>
+
+  <script>
+    fetch('https://fakestoreapi.com/products')
+      .then(resp => resp.json())
+      .then(products => {
+        const product = products[0]; 
+        const productBox = document.getElementById('productBox');
+        prodB.innerHTML = `
+          <div>
+            <h1>${product.title}</h1>
+            <img src="${product.image}" width="150">
+            <p>${product.description}</p>
+            <p>Price: $${product.price}</p>
+          </div>
+        `;
+      });
+  </script>
+</body>
+</html>

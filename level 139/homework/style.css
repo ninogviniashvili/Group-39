@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #fff;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #ffd500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  z-index: 10;
+}
+
+.navbar .logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+}
+
+.navbar nav a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 15px;
+}
+
+.navbar .nav-icons span {
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.hero {
+  background-image: url('https://previews.123rf.com/images/doucefleur/doucefleur1607/doucefleur160700057/62587659-shoes-on-nature-green-grass-in-the-morning-travel-or-sport-concept-and-idea-background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+  position: relative;
+}
+
+.overlay {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 100px 60px;
+}
+
+.text-box {
+  max-width: 500px;
+}
+
+.subtitle {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.text-box h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #bfbfbf;
+}
