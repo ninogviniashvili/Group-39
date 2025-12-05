@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    margin: 0 18px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.icons span {
+    margin-left: 18px;
+    font-size: 20px;
+}
+
+.hero {
+    width: 100%;
+    height: 90vh;
+    background: url("https://www.x-bionic.com/cdn/shop/files/WebBanner_Desktop_HolidayCampaign_Slide1.1.jpg?v=1764664048&width=1920") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    color: white;
+}
+
+.hero-text .small {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0 20px;
+}
+
+.hero-text button {
+    padding: 12px 25px;
+    font-size: 15px;
+    border: none;
+    background: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.products-section {
+    padding: 50px;
+}
+
+.products-section h2 {
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+}
+
+.product-card {
+    background: #f6f6f6;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.title {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.price {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
