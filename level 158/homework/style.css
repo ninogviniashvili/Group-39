@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.tagline{
+    font-size: 14px;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.hero{
+    height: 80vh;
+    background-image: url('https://ziatile.com/cdn/shop/files/Roman-mosaics-hero-mobile.jpg?v=1765326943');
+    background-size: cover;
+    background-position: center;
+    position:relative;
+
+}
+
+.hero-text{
+    position: absolute;
+    bottom: 80px;
+    left: 50px;
+    color: white;
+}
+
+.hero-text h2{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text p{
+    margin-bottom: 15px;
+}
+
+.hero-text button{
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    font-weight: bold;
+}

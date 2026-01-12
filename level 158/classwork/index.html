@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="inp" type="text" placeholder="Enter">
+
+    <button id="btn">Add</button>
+
+    <h1 id="result"></h1>
+
+    <script>
+
+       let input = document.getElementById("inp");
+       let button = document.getElementById("btn") 
+       let h1 = document.getElementById("result")
+
+       let list = []
+
+       button.addEventListener("click", function(){
+        list.push(input.value)
+        h1.textContent = list.join("")
+        input.value = ""
+       })
+    </script>
+</body>
+</html>
