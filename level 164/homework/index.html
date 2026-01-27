@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nv">
+        <div class="lg">☀ Weather Now</div>
+        <button class="un">Units</button>
+    </nav>
+
+    <section class="hero">
+        <h1>How's the sky looking today?</h1>
+        <div class="sr">
+            <input id="city" type="text" placeholder="Search for a place...">
+            <button onclick="getWeather()">Search</button>
+        </div>
+    </section>
+
+    <section class="layout">
+
+        <div class="main-card">
+            <div class="info">
+                <h2 id="place">Berlin, Germany</h2>
+                <p id="date"> =Tuesday, Aug 5, 2025</p>
+            </div>
+            <div class="temp">
+                <span id="icon">☀</span>
+                <h1 id="temp">20°</h1>
+            </div>
+        </div>
+
+        <div class="hourly">
+            <div class="hourly-head">
+                <h3>Hourly forecast</h3>
+                <span>Tuesday</span>
+            </div>
+            <div id="hours"></div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div><p>Feels Like</p><h3 id="feels">18°</h3></div>
+        <div><p>Humidity</p><h3 id="humidity">46%</h3></div>
+        <div><p>Wind</p><h3 id="wind">14 km/h</h3></div>
+        <div><p>Precipitation</p><h3 id="rain">0 mm</h3></div>
+    </section>
+
+    <section class="daily">
+        <h3>Daily forecast</h3>
+        <div id="days"></div>
+    </section>
+</body>
+</html>
