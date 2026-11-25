@@ -1,0 +1,8 @@
+{
+  "agents": [
+    { "name": "Jett", "role": "Duelist", "power": 85 },
+    { "name": "Sage", "role": "Sentinel", "power": 75 },
+    { "name": "Omen", "role": "Controller", "power": 80 },
+    { "name": "Sova", "role": "Initiator", "power": 90 }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "songs": [
+    {
+      "title": "Bohemian Rhapsody",
+      "artist": "Queen",
+      "duration": "5:55"
+    },
+    {
+      "title": "Billie Jean",
+      "artist": "Michael Jackson",
+      "duration": "4:54"
+    },
+    {
+      "title": "Smells Like Teen Spirit",
+      "artist": "Nirvana",
+      "duration": "5:01"
+    },
+    {
+      "title": "Shape of You",
+      "artist": "Ed Sheeran",
+      "duration": "3:53"
+    },
+    {
+      "title": "Blinding Lights",
+      "artist": "The Weeknd",
+      "duration": "3:20"
+    }
+  ]
+}
